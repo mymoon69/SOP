@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/ADMIN/IdeaProjects/week4/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/ADMIN/IdeaProjects/week4/./frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/ADMIN/IdeaProjects/week4/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\ADMIN\\IdeaProjects\\week4\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\ADMIN\\IdeaProjects\\week4\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/ADMIN/IdeaProjects/week4/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/ADMIN/IdeaProjects/week4/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/ADMIN/IdeaProjects/week4/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\ADMIN\\IdeaProjects\\week4\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
