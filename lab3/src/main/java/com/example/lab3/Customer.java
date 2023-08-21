@@ -1,4 +1,4 @@
-package com.example.lab3;
+package com.example.week3;
 
 public class Customer {
     private String ID;
@@ -6,39 +6,40 @@ public class Customer {
     private boolean sex;
     private int age;
 
-    public String getID(){
-        return ID;
-    }
-
-    public void setID(String name) {
+    public void setID(String ID) {
         this.ID  = ID;
     }
 
-    public String getName() {
-        return name;
+    public String getID(){
+        return ID;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public boolean isSex() {
-        return sex;
+    public String getName() {
+        return name;
     }
 
     public void setSex(String sex) {
-        if(sex.toLowerCase().equals("male")){
+        if(sex.equalsIgnoreCase("male")){
             this.sex = true;
+        } else {
+            this.sex = false;
         }
-        this.sex = false;
     }
 
-    public int getAge() {
-        return age;
+    public boolean getSex() {
+        return this.sex;
     }
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public Customer() {

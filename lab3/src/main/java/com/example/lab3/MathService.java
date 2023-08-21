@@ -1,4 +1,4 @@
-package com.example.lab3;
+package com.example.week3;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
