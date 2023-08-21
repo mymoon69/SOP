@@ -1,7 +1,7 @@
-package com.example.week4;
+package com.example.lab4;
 
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.html.Label;
+//import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -16,6 +16,8 @@ public class MathView extends VerticalLayout {
         tf1 = new TextField("Number 1");
         tf2 = new TextField("Number 2");
         tf3 = new TextField("Answer");
+
+//        Label text = new Label("operation");
 
         HorizontalLayout h1 = new HorizontalLayout();
         btnPlus = new Button("+");
