@@ -1,6 +1,9 @@
-package com.example.lab4;
+package com.example.week4;
 
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 public class MathAPI {
@@ -30,7 +33,10 @@ public class MathAPI {
     }
 
     @RequestMapping(value = {"/max"}, method = {RequestMethod.POST})
-    public String myMax(@RequestBody double n1, @RequestBody double n2) {
-        return  String.valueOf(Math.max(n1, n2));
+    public double myMax(@RequestBody MultiValueMap<String, String> n) {
+        Map<String, String> d = n.toSingleValueMap();
+        double maxnumber = Math.max(Double.parseDouble(d.get("n1")), Double.parseDouble(d.get("n2")));
+        return  maxnumber;
     }
+
 }
