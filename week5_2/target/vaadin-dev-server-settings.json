@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/ASUS/IdeaProjects/week5_2/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/ASUS/IdeaProjects/week5_2/./frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/ASUS/IdeaProjects/week5_2/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\ASUS\\IdeaProjects\\week5_2\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\ASUS\\IdeaProjects\\week5_2\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/ASUS/IdeaProjects/week5_2/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/ASUS/IdeaProjects/week5_2/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/ASUS/IdeaProjects/week5_2/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\ASUS\\IdeaProjects\\week5_2\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
