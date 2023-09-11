@@ -8,6 +8,7 @@ public class Week52Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Week52Application.class, args);
+        System.out.println("Manee");
     }
 
 }

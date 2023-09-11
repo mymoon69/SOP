@@ -44,21 +44,25 @@ public class MyView2 extends HorizontalLayout {
 
         this.add(v1, v2);
 
-        addGoodWord.addClickListener(event -> {
+        addGoodWord.addClickListener(event->{
             String word = addWord.getValue();
-            ArrayList out = WebClient.create().post().uri("http://localhost:8080/addGood/" + word)
-                    .retrieve().bodyToMono(ArrayList.class).block();
+            ArrayList out = WebClient.create()
+                    .post()
+                    .uri("http://localhost:8080/addGood/" + word)
+                    .retrieve()
+                    .bodyToMono(ArrayList.class)
+                    .block();
             goodWord.setItems(out);
         });
 
-        addBadWord.addClickListener(event -> {
+        addBadWord.addClickListener(event->{
             String word = addWord.getValue();
             ArrayList out = WebClient.create().post().uri("http://localhost:8080/addBad/" + word)
                     .retrieve().bodyToMono(ArrayList.class).block();
             badWord.setItems(out);
         });
 
-        addSen.addClickListener(event -> {
+        addSen.addClickListener(event->{
             String sentence = addSentence.getValue();
             String out = WebClient.create().post().uri("http://localhost:8080/proof/" + sentence)
                     .retrieve().bodyToMono(String.class).block();
@@ -66,7 +70,7 @@ public class MyView2 extends HorizontalLayout {
             noti.open();
         });
 
-        showSentence.addClickListener((event -> {
+        showSentence.addClickListener((event->{
             Sentence out = WebClient.create().get().uri("http://localhost:8080/getSentence")
                     .retrieve().bodyToMono(Sentence.class).block();
             goodSentence.setValue(out.goodSentences.toString());
