@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Week6Application {
 
     public static void main(String[] args) {
+
         SpringApplication.run(Week6Application.class, args);
+        System.out.println("manee");
     }
 
 }
