@@ -22,21 +22,21 @@ public class WizardController {
     }
 
     @RequestMapping(value = {"/addWizard"}, method = {RequestMethod.POST})
-    public ResponseEntity<String> addWizard(@RequestBody MultiValueMap<String, String> fromData){
+    public ResponseEntity<?> addWizard(@RequestBody MultiValueMap<String, String> fromData){
         Map<String, String> data = fromData.toSingleValueMap();
         Wizard wizard = wizardService.addWizard(new Wizard(null, data.get("gender"), data.get("name"), data.get("school"), data.get("house"), data.get("money"), data.get("position")));
         return ResponseEntity.ok("Wizard has been Created");
     }
 
     @RequestMapping(value = {"/updateWizard"}, method = {RequestMethod.POST})
-    public ResponseEntity<String> updateWizard(@RequestBody MultiValueMap<String, String> fromData){
+    public ResponseEntity<?> updateWizard(@RequestBody MultiValueMap<String, String> fromData){
         Map<String, String> data = fromData.toSingleValueMap();
         Wizard wizard = wizardService.addWizard(new Wizard(data.get("id"), data.get("gender"), data.get("name"), data.get("school"), data.get("house"), data.get("money"), data.get("position")));
         return ResponseEntity.ok("Wizard has been Update");
     }
 
     @RequestMapping(value = {"/daleteWizard/{id}"}, method = {RequestMethod.POST})
-    public ResponseEntity<String> deleteWizard(@PathVariable String id) {
+    public ResponseEntity<?> deleteWizard(@PathVariable String id) {
         wizardService.deleteWizard(id);
         return ResponseEntity.ok("Wizard has been Delete");
     }

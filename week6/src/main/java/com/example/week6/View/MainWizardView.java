@@ -20,7 +20,7 @@ import com.vaadin.flow.component.notification.Notification;
 import java.util.ArrayList;
 import java.util.List;
 
-@Route(value = "/mainPage.it")
+@Route(value = "mainPage.it")
 public class MainWizardView extends VerticalLayout {
     private TextField name, money;
     private RadioButtonGroup<String> gender;
@@ -89,15 +89,16 @@ public class MainWizardView extends VerticalLayout {
             formData.add("school", school.getValue());
             formData.add("house", house.getValue());
 
-            String output = WebClient.create()
+            String out = WebClient.create()
                     .post()
                     .uri("http://localhost:8080/addWizard")
                     .body(BodyInserters.fromFormData(formData))
                     .retrieve().bodyToMono(String.class).block();
+            //เอาไว้ index สุดท้าย
             this.index = this.WizardData().size() - 1;
+            //save ค่า
             this.data.setModel((ArrayList<Wizard>) this.WizardData());
-            System.out.println(this.index + " index now");
-            new Notification(output, 10000).open();
+            new Notification(out, 10000).open();
         });
         update.addClickListener(event -> {
             MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
@@ -114,13 +115,13 @@ public class MainWizardView extends VerticalLayout {
             formData.add("school", school.getValue());
             formData.add("house", house.getValue());
 
-            String output = WebClient.create()
+            String out = WebClient.create()
                     .post()
                     .uri("http://localhost:8080/updateWizard")
                     .body(BodyInserters.fromFormData(formData))
                     .retrieve().bodyToMono(String.class).block();
             this.data.setModel((ArrayList<Wizard>) this.WizardData());
-            new Notification(output, 10000).open();
+            new Notification(out, 10000).open();
         });
 
         delete.addClickListener(event -> {
