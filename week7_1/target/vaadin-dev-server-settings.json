@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/ASUS/Downloads/SOP-main/SOP-main/week6_7/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/ASUS/Downloads/SOP-main/SOP-main/week6_7/./frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/ASUS/Downloads/SOP-main/SOP-main/week6_7/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\ASUS\\Downloads\\SOP-main\\SOP-main\\week6_7\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\ASUS\\Downloads\\SOP-main\\SOP-main\\week6_7\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/ASUS/Downloads/SOP-main/SOP-main/week6_7/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/ASUS/Downloads/SOP-main/SOP-main/week6_7/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/ASUS/Downloads/SOP-main/SOP-main/week6_7/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\ASUS\\Downloads\\SOP-main\\SOP-main\\week6_7\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
